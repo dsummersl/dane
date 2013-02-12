@@ -7,9 +7,17 @@ Requirements
 The Java JDK
 Gradle - to build and test your code.
 
-Compile
+Compile & Test
 ====
 
+Once you've got gradle installed you can build and test your code with ease:
+
+    gradle test
+    gradle jar
+
+To run the demo application type:
+
+    gradle helloworld
 
 Links
 ====

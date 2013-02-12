@@ -8,3 +8,12 @@ dependencies {
   // Basic unit testing library
   compile "junit:junit:4.10"
 }
+
+task helloworld(dependsOn: jar) << {
+  println "\n\n================="
+  def p = "java -cp build/libs/squiggs-dane.jar squiggs.Demo".execute()
+  p.waitFor()
+  println p.text
+  println p.err.text
+  println "================="
+}
